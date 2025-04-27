@@ -1,0 +1,40 @@
+.diagram-bar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diagram-bar__inner {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #313131;
+  border-radius: 12px;
+  background-color: #fefae1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.diagram-bar__fill {
+  background-color: #bd8025;
+  width: 100%;
+  height: 0%;
+  transition: height 0.5s ease-out, background-color 0.3s ease,
+    transform 0.3s ease;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.diagram-bar__fill:hover {
+  background-color: #66bb6a;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.7);
+  transform: scale(1.05);
+}
+
+.diagram-bar__label {
+  font-weight: bold;
+  font-size: 0.5rem;
+  text-align: center;
+}
